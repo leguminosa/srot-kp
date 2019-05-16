@@ -25,8 +25,8 @@ Class Katalog {
         return $query;
     }
 
-    public function insert($user, $truck) {
-        $query = "INSERT INTO detail_booking (id_user, id_truck) VALUES ('$user','$truck')";
+    public function order_truck($user, $truck) {
+        $query = "INSERT INTO detail_booking (id_user, id_truck, status) VALUES ('$user','$truck', '0')";
         return $query;
     }
 
